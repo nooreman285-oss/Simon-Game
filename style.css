@@ -1,32 +1,118 @@
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     text-align: center;
+    margin: 0;
+    padding: 20px 10px;
+    overflow-x: hidden;
 }
-.btn{
-    height: 200px;
-    width: 200px;
-    border-radius: 20%;
-    border: 10px solid #000;
-    margin: 2.5rem;
+
+h1 {
+    font-size: 2.5rem;
+    margin: 10px 0 15px;
 }
-.btn-container{
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0 0 25px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line-one,
+.line-two {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-.yellow{
+
+.btn {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    border: 10px solid #000;
+    margin: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 20px;
+}
+
+.yellow {
     background-color: #f99b45;
 }
-.red{
+
+.red {
     background-color: #d95980;
 }
-.green{
+
+.green {
     background-color: #63aac0;
 }
-.purple{
+
+.purple {
     background-color: #819ff9;
 }
-.flash{
+
+.flash {
     background-color: #fff;
 }
-.userflash{
+
+.userflash {
     background-color: green;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 5px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin: 5px 0 12px;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        margin: 0 10px 20px;
+    }
+
+    .btn {
+        width: 40vw;
+        height: 40vw;
+        max-width: 180px;
+        max-height: 180px;
+        min-width: 120px;
+        min-height: 120px;
+        border-width: 8px;
+        margin: 0.6rem;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .btn {
+        width: 38vw;
+        height: 38vw;
+        min-width: 110px;
+        min-height: 110px;
+        margin: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
 }
